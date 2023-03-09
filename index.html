@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Kuagi Class One</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/img/woman.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="topHeader">
+        <div class="logo">
+          <h1>Matina <span>Store</span></h1>
+        </div>
+
+        <div class="navs">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Product</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="secondHeader">
+        <h2>BEST OFFER</h2>
+        <h1>NEW ARRIVALS ON SALE</h1>
+      </div>
+    </header>
+  </body>
+
+  <script>
+    // let arr1 = [1, 2, 3];
+    // let arr2 = [4, 6];
+
+    // let isFounded = arr1.some((ai) => arr2.includes(ai));
+
+    // console.log(isFounded);
+
+    // arr1.filter((a) => {
+    //   if (a > arr1[1]) {
+    //     return console.log(a);
+    //   }
+    // });
+
+    // const array1 = [1, 2, 7, 4, 5];
+    // const array2 = [5, 6, 7, 8, 9];
+
+    // const containsAny = array1.some((item) => {
+    //   if (array2.includes(item)) {
+    //     return;
+    //   }
+    // });
+
+    // console.log(containsAny);
+
+    // const array1 = ["1", "2", "3", "4", "5"];
+    // const array2 = ["4", "5", "6", "7", "8"];
+
+    // const presentElements = array1.filter((item) => array2.includes(item));
+
+    // console.log(presentElements); // [4, 5]
+
+    const arr1 = ["+234801", "+234802", "3", "4", "5"];
+    const arr2 = ["+234801", "+234802", "6", "7", "8"];
+
+    const filterContacts = arr1.filter((item) => arr2.includes(item));
+
+    const otherContacts = arr1
+      .filter((item) => !arr2.includes(item))
+      .concat(arr2.filter((item) => !arr1.includes(item)));
+
+    console.log(filterContacts.concat(otherContacts));
+
+    //     given an array of 10 integer values, return the values ​​that are not less than the 4th indexed value.
+
+    // input: [3,4,6,8,7,3,2,6,4,5]
+
+    const arro = [3, 4, 6, 8, 7, 3, 2, 6, 4, 5];
+
+    const bb = arro.filter((a) => {
+      if (a > arro[4]) {
+        return a;
+      }
+    });
+
+    console.log(bb);
+  </script>
+</html>
