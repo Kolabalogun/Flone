@@ -82,12 +82,14 @@
 
     //     given an array of 10 integer values, return the values ​​that are not less than the 4th indexed value.
 
-    // input: [3,4,6,8,7,3,2,6,4,5]
+    input: [3, 4, 6, 8, 7, 3, 2, 6, 4, 5];
 
-    const arro = [3, 4, 6, 8, 7, 3, 2, 6, 4, 5];
+    const arro = [3, 4, 6, 4, 7, 3, 2, 6, 4, 5];
+
+    console.log(arro[3]);
 
     const bb = arro.filter((a) => {
-      if (a > arro[4]) {
+      if (a > arro[3]) {
         return a;
       }
     });
